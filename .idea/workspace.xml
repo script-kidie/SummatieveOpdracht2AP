@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FiniteStateMachine/JumpNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/JumpNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +20,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1sR0aZyJ0VmjmQsrUF39WOzK89Y" />
   <component name="ProjectLevelVcsManager">
@@ -75,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620820160180</updated>
       <workItem from="1620820161377" duration="3000" />
-      <workItem from="1620820291211" duration="2241000" />
+      <workItem from="1620820291211" duration="9654000" />
     </task>
     <servers />
   </component>

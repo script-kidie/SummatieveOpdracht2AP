@@ -1,25 +1,40 @@
 package FiniteStateMachine;
 
 public class Node {
-    private String naam;
-    private String a;
-    private String b;
+    private String name;
+    private Node a;
+    private Node b;
 
-    public Node(String naam, String a, String b) {
-        this.naam = naam;
-        this.a = a;
-        this.b = b;
+    public Node(String name) {
+        this.name = name;
     }
 
-    public String getNaam() {
-        return naam;
+    public String getName() {
+        return name;
     }
 
-    public String getA() {
+    public Node getA() {
         return a;
     }
 
-    public String getB() {
+    public Node getB() {
         return b;
+    }
+
+    public void setA(Node a) {
+        this.a = a;
+    }
+
+    public void setB(Node b) {
+        this.b = b;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "naam='" + name + '\'' +
+                ", a='" + a + '\'' +
+                ", b='" + b + '\'' +
+                '}';
     }
 }
