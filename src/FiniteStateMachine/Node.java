@@ -32,9 +32,7 @@ public class Node {
     @Override
     public String toString() {
         return "Node{" +
-                "naam='" + name + '\'' +
-                ", a='" + a + '\'' +
-                ", b='" + b + '\'' +
+                "name='" + name + '\'' +
                 '}';
     }
 }
