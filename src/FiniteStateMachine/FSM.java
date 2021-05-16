@@ -34,16 +34,24 @@ public class FSM {
 
         for(char c: jumps.toCharArray()){
             System.out.println(c);
-                if(c == 'a'){
+            System.out.println("current node="+currentNode);
+            try {
+                if (c == 'a') {
                     currentNode = currentNode.getA();
                     history.add(currentNode.getName());
-                }
 
-                else if(c == 'b'){
+                } else if (c == 'b') {
                     currentNode = currentNode.getB();
                     history.add(currentNode.getName());
+
                 }
 
+            } catch (Exception e) {
+                System.out.println("//-- Error melding --//");
+                System.out.println("Node:"+history.get(history.size() - 1)+"\nHeeft geen overgang:"+c);
+                System.out.println("Node overgang historiek"+history + " op index: "+ (history.size() - 1)+" heeft te fout zich plaatgevonden");
+                break;
+            }
 
         }
         return history;

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="">
+    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="Added jump functionality between nodes. Error handeling not yet inplemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/JumpNode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +71,18 @@
       <updated>1620820160180</updated>
       <workItem from="1620820161377" duration="3000" />
       <workItem from="1620820291211" duration="9654000" />
-      <workItem from="1621081576930" duration="4870000" />
+      <workItem from="1621081576930" duration="4966000" />
+      <workItem from="1621089915283" duration="676000" />
+      <workItem from="1621162006626" duration="1759000" />
     </task>
+    <task id="LOCAL-00001" summary="Added jump functionality between nodes. Error handeling not yet inplemented">
+      <created>1621089712174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621089712174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +99,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added jump functionality between nodes. Error handeling not yet inplemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jump functionality between nodes. Error handeling not yet inplemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
