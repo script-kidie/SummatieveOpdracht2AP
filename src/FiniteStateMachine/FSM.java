@@ -6,22 +6,14 @@ import java.util.List;
 import java.util.Random;
 
 public class FSM {
-    private List<Node> nodeArray;
-    private String jumps;
+    private final List<Node> nodeArray;
+    private final String jumps;
     private Node currentNode;
 
     public FSM(List nodeArray, String jumps) {
         this.nodeArray = nodeArray;
         this.jumps = jumps;
 
-    }
-
-    public List getNodeArray() {
-        return nodeArray;
-    }
-
-    public String getJumps() {
-        return jumps;
     }
 
     public Node run(String key, List<String> history){
@@ -42,7 +34,7 @@ public class FSM {
         return currentNode;
     }
 
-    public int runText(){
+    public void runText(){
         /*
          * Jumps between nodes based if a text input
          * @return int
@@ -60,16 +52,15 @@ public class FSM {
 
             currentNode = run(c, history);
             if (currentNode == null){
-                return 1;
+                return;
             }
 
         }
         System.out.println(history);
         System.out.println("FSM sucsesvool uitgevoerd.");
-        return 0;
     }
 
-    public int runChance(){
+    public void runChance(){
         /*
          * Jumps between nodes at random
          * @return int
@@ -85,19 +76,18 @@ public class FSM {
         Object[] keys = currentNode.getJumps().keySet().toArray(); // get all keys from the first random selected node
 
         // loops for the amount of keys in the first current node
-        for (Object val: keys){
+        for (Object ignored : keys){
             Object randkey = keys[randInt.nextInt(keys.length)]; // get a random key from the ones available
 
             String StringRandomKey = String.valueOf(randkey);  //make "randkey" a string for easier use
 
             currentNode = run(StringRandomKey, history);
             if (currentNode == null){
-                return 1;
+                return;
             }
         }
         System.out.println(history);
         System.out.println("FSM sucsesvool uitgevoerd.");
-        return 0;
     }
 
 

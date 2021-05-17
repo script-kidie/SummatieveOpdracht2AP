@@ -3,7 +3,7 @@ package FiniteStateMachine;
 import java.util.HashMap;
 
 public class Node {
-    private String name;
+    private final String name;
     private HashMap<String, Node> jumps;
 
     public Node(String name) {
