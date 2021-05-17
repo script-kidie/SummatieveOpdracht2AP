@@ -56,7 +56,7 @@ public class FSM {
             }
 
         }
-        System.out.println(history);
+        System.out.println("Overgang geshiedenis:"+ history);
         System.out.println("FSM sucsesvool uitgevoerd.");
     }
 
@@ -86,7 +86,7 @@ public class FSM {
                 return;
             }
         }
-        System.out.println(history);
+        System.out.println("Overgang geshiedenis:"+ history);
         System.out.println("FSM sucsesvool uitgevoerd.");
     }
 
