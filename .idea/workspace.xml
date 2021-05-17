@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="Added functionality for infinite amount of nodes">
+    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="Added a function that jumps between nodes at random">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +59,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +73,8 @@
       <workItem from="1621081576930" duration="4966000" />
       <workItem from="1621089915283" duration="676000" />
       <workItem from="1621162006626" duration="4773000" />
-      <workItem from="1621237677818" duration="11113000" />
+      <workItem from="1621237677818" duration="11985000" />
+      <workItem from="1621255703532" duration="817000" />
     </task>
     <task id="LOCAL-00001" summary="Added jump functionality between nodes. Error handeling not yet inplemented">
       <created>1621089712174</created>
