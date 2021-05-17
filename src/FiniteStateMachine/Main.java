@@ -48,10 +48,11 @@ public class Main {
 
         FSM finalStateMachine = new FSM(nodeList, "abcdbacd");
 
-        if (finalStateMachine.runChance() == 0) {
-            System.out.println("FSM sucsesvool uitgevoerd.");
+        finalStateMachine.runChance();
+
+        finalStateMachine.runText();
         }
     }
-}
+
 
 

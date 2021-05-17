@@ -24,6 +24,23 @@ public class FSM {
         return jumps;
     }
 
+    public Object run(String key, List<String> history){
+        /**
+         * Jumps from one note to another with the given key
+         * @returns object
+         */
+
+        if (currentNode.getJumps().containsKey(key)) {    // check if the current node contains the given key
+            currentNode = currentNode.getJumps().get(key); // get the next node
+            history.add(currentNode.getName()); // add the current nodes name to the history list
+
+        } else {
+            System.out.println("//-- Error melding --//");
+            System.out.println("Node:"+history.get(history.size() - 1)+"\nHeeft geen overgang: "+key);
+            System.out.println("Node overgang historiek"+history + " op index: "+ (history.size() - 1)+" is de Error");
+        }
+        return currentNode;
+    }
 
 
     public int runText(){
@@ -31,8 +48,6 @@ public class FSM {
          * Jumps between nodes based if a text input
          * @return int
          */
-
-
         this.currentNode = nodeArray.get(0); //start at the first node
 
         List<String> history = new ArrayList<>(); //make an empty list to track nodes that the code has jumped to
@@ -44,19 +59,17 @@ public class FSM {
 
             String c = String.valueOf(ch);  //make "ch" a string for easier use
 
-            if (currentNode.getJumps().containsKey(c)) {    // check if the current node contains the given key
-                currentNode = currentNode.getJumps().get(c); // get the next node
-                history.add(currentNode.getName()); // add the current nodes name to the history list
-
+            if (currentNode.getJumps().containsKey(c)){ //check if the current node contains the current key
+                currentNode = (Node) run(c, history); // get the new current node
+                continue;
             } else {
-                System.out.println("//-- Error melding --//");
-                System.out.println("Node:"+history.get(history.size() - 1)+"\nHeeft geen overgang: "+c);
-                System.out.println("Node overgang historiek"+history + " op index: "+ (history.size() - 1)+" is de Error");
+                run(c,history); // give an error message
                 return 1;
             }
 
         }
-
+        System.out.println(history);
+        System.out.println("FSM sucsesvool uitgevoerd.");
         return 0;
     }
 
@@ -65,8 +78,6 @@ public class FSM {
          * Jumps between nodes at random
          * @return int
          */
-
-
         Random randInt = new Random(); // make a random int
 
         this.currentNode = nodeArray.get(randInt.nextInt(nodeArray.size())); // get a random node from the ones available
@@ -75,27 +86,25 @@ public class FSM {
 
         history.add(currentNode.getName()); // add the current nodes name to the history list
 
-        Object[] keys = currentNode.getJumps().keySet().toArray(); // get all keys from the first random selcted node
+        Object[] keys = currentNode.getJumps().keySet().toArray(); // get all keys from the first random selected node
 
-
-        // loops for the amount of keys in the current node
+        // loops for the amount of keys in the first current node
         for (Object val: keys){
-            Object randomkey = keys[randInt.nextInt(keys.length)]; // get a random key from the ones available
-            System.out.println(randomkey);
+            Object randkey = keys[randInt.nextInt(keys.length)]; // get a random key from the ones available
 
-            if (currentNode.getJumps().containsKey(randomkey)) {  // check if the current node contains the given key
-                currentNode = currentNode.getJumps().get(randomkey); // get the next node
-                history.add(currentNode.getName()); // add the current nodes name to the history list
+            String StringRandomKey = String.valueOf(randkey);  //make "randkey" a string for easier use
 
+            if (currentNode.getJumps().containsKey(StringRandomKey)){ //check if the current node contains the current key
+                currentNode = (Node) run(StringRandomKey, history); // get the new current node
+                continue;
             } else {
-                System.out.println("//-- Error melding --//");
-                System.out.println("Node:"+history.get(history.size() - 1)+"\nHeeft geen overgang: "+randomkey);
-                System.out.println("Node overgang historiek"+history + " op index: "+ (history.size() - 1)+" is de Error");
+                run(StringRandomKey,history); // give an error message
                 return 1;
             }
 
         }
-
+        System.out.println(history);
+        System.out.println("FSM sucsesvool uitgevoerd.");
         return 0;
     }
 
