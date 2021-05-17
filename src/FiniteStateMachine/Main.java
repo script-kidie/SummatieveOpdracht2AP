@@ -46,10 +46,11 @@ public class Main {
         nodeList.add(S2);
         nodeList.add(S3);
 
-        FSM finalStateMachine = new FSM(nodeList, "abcdbabbcd");
+        FSM finalStateMachine = new FSM(nodeList, "abcdbacd");
 
-        finalStateMachine.run();
-
+        if (finalStateMachine.runChance() == 0) {
+            System.out.println("FSM sucsesvool uitgevoerd.");
+        }
     }
 }
 

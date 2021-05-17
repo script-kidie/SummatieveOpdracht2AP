@@ -26,6 +26,7 @@ public class Node {
     public String toString() {
         return "Node{" +
                 "name='" + name + '\'' +
+                ", jumps=" + jumps +
                 '}';
     }
 }
