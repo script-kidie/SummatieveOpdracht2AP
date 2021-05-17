@@ -27,26 +27,18 @@ public class FSM {
 
     public List<String> run(){
 
-        System.out.println(nodeArray);
         this.currentNode = nodeArray.get(0);
         List<String> history = new ArrayList<>();
         history.add(currentNode.getName());
 
-        for(char c: jumps.toCharArray()){
-            System.out.println(c);
-            System.out.println("current node="+currentNode);
-            try {
-                if (c == 'a') {
-                    currentNode = currentNode.getA();
-                    history.add(currentNode.getName());
+        for(char ch: jumps.toCharArray()){
 
-                } else if (c == 'b') {
-                    currentNode = currentNode.getB();
-                    history.add(currentNode.getName());
+            String c = String.valueOf(ch);
 
-                }
-
-            } catch (Exception e) {
+            if (currentNode.getJumps().containsKey(c)){
+                currentNode = currentNode.getJumps().get(c);
+                history.add(currentNode.getName());
+            } else {
                 System.out.println("//-- Error melding --//");
                 System.out.println("Node:"+history.get(history.size() - 1)+"\nHeeft geen overgang:"+c);
                 System.out.println("Node overgang historiek"+history + " op index: "+ (history.size() - 1)+" heeft te fout zich plaatgevonden");

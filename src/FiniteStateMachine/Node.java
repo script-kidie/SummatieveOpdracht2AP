@@ -1,9 +1,10 @@
 package FiniteStateMachine;
 
+import java.util.HashMap;
+
 public class Node {
     private String name;
-    private Node a;
-    private Node b;
+    private HashMap<String, Node> jumps;
 
     public Node(String name) {
         this.name = name;
@@ -13,20 +14,12 @@ public class Node {
         return name;
     }
 
-    public Node getA() {
-        return a;
+    public HashMap<String, Node> getJumps() {
+        return jumps;
     }
 
-    public Node getB() {
-        return b;
-    }
-
-    public void setA(Node a) {
-        this.a = a;
-    }
-
-    public void setB(Node b) {
-        this.b = b;
+    public void setJumps(HashMap<String, Node> jumps) {
+        this.jumps = jumps;
     }
 
     @Override
