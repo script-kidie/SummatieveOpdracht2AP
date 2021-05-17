@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="added unit testing, removed unused code and cleaned up small mistakes">
+    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="Made main class compliant with the assigment, and very minor user experience changes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,17 +78,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SummatieveOpdracht2AP" />
       <extension name="coverage">
@@ -125,7 +113,8 @@
       <workItem from="1621089915283" duration="676000" />
       <workItem from="1621162006626" duration="4773000" />
       <workItem from="1621237677818" duration="11985000" />
-      <workItem from="1621255703532" duration="14121000" />
+      <workItem from="1621255703532" duration="14407000" />
+      <workItem from="1621270993047" duration="755000" />
     </task>
     <task id="LOCAL-00001" summary="Added jump functionality between nodes. Error handeling not yet inplemented">
       <created>1621089712174</created>
@@ -176,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621268042209</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made main class compliant with the assigment, and very minor user experience changes">
+      <created>1621270238190</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621270238190</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +199,8 @@
     <MESSAGE value="removed duplicate code and added additional documentation" />
     <MESSAGE value="moved jumping nodes to the node class and optimized functionality." />
     <MESSAGE value="added unit testing, removed unused code and cleaned up small mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added unit testing, removed unused code and cleaned up small mistakes" />
+    <MESSAGE value="Made main class compliant with the assigment, and very minor user experience changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made main class compliant with the assigment, and very minor user experience changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
