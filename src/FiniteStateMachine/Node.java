@@ -28,4 +28,12 @@ public class Node {
                 "name='" + name + '\'' +
                 '}';
     }
+    public Node jump(String keyInput){
+        /*
+         * tries to jump from one note to another with the given key
+         * @returns object
+         */
+
+        return getJumps().getOrDefault(keyInput, null); // return the next node or null if the key does not exist
+    }
 }

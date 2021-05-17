@@ -46,7 +46,7 @@ public class Main {
         nodeList.add(S2);
         nodeList.add(S3);
 
-        FSM finalStateMachine = new FSM(nodeList, "abcdbacd");
+        FSM finalStateMachine = new FSM(nodeList, "abcdbbbacd");
 
         finalStateMachine.runChance();
 

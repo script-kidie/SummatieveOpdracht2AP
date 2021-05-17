@@ -24,27 +24,26 @@ public class FSM {
         return jumps;
     }
 
-    public Object run(String key, List<String> history){
-        /**
-         * Jumps from one note to another with the given key
-         * @returns object
+    public Node run(String key, List<String> history){
+        /*
+         * defines the next node
+         * @return Node
          */
 
-        if (currentNode.getJumps().containsKey(key)) {    // check if the current node contains the given key
-            currentNode = currentNode.getJumps().get(key); // get the next node
-            history.add(currentNode.getName()); // add the current nodes name to the history list
-
-        } else {
+        currentNode = currentNode.jump(key); // try to get the next node
+        System.out.println(key);
+        if (currentNode == null){
             System.out.println("//-- Error melding --//");
             System.out.println("Node:"+history.get(history.size() - 1)+"\nHeeft geen overgang: "+key);
             System.out.println("Node overgang historiek"+history + " op index: "+ (history.size() - 1)+" is de Error");
+        } else{
+            history.add(currentNode.getName());
         }
         return currentNode;
     }
 
-
     public int runText(){
-        /**
+        /*
          * Jumps between nodes based if a text input
          * @return int
          */
@@ -59,11 +58,8 @@ public class FSM {
 
             String c = String.valueOf(ch);  //make "ch" a string for easier use
 
-            if (currentNode.getJumps().containsKey(c)){ //check if the current node contains the current key
-                currentNode = (Node) run(c, history); // get the new current node
-                continue;
-            } else {
-                run(c,history); // give an error message
+            currentNode = run(c, history);
+            if (currentNode == null){
                 return 1;
             }
 
@@ -74,7 +70,7 @@ public class FSM {
     }
 
     public int runChance(){
-        /**
+        /*
          * Jumps between nodes at random
          * @return int
          */
@@ -94,14 +90,10 @@ public class FSM {
 
             String StringRandomKey = String.valueOf(randkey);  //make "randkey" a string for easier use
 
-            if (currentNode.getJumps().containsKey(StringRandomKey)){ //check if the current node contains the current key
-                currentNode = (Node) run(StringRandomKey, history); // get the new current node
-                continue;
-            } else {
-                run(StringRandomKey,history); // give an error message
+            currentNode = run(StringRandomKey, history);
+            if (currentNode == null){
                 return 1;
             }
-
         }
         System.out.println(history);
         System.out.println("FSM sucsesvool uitgevoerd.");

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="Added documentation in FSM class">
+    <list default="true" id="65fac0a5-7967-4b7c-836f-82c50a21ff92" name="Default Changelist" comment="removed duplicate code and added additional documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummatieveOpdracht2AP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SummatieveOpdracht2AP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/FSM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/FSM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SummatieveOpdracht2AP/FiniteStateMachine/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/FSM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FiniteStateMachine/Node.java" afterDir="false" />
@@ -15,8 +19,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -40,16 +46,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="FiniteStateMachine" />
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Exexute" type="Application" factoryName="Application">
@@ -57,6 +80,17 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="FiniteStateMachine.Main" />
       <module name="SummatieveOpdracht2AP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,7 +110,7 @@
       <workItem from="1621089915283" duration="676000" />
       <workItem from="1621162006626" duration="4773000" />
       <workItem from="1621237677818" duration="11985000" />
-      <workItem from="1621255703532" duration="6216000" />
+      <workItem from="1621255703532" duration="10508000" />
     </task>
     <task id="LOCAL-00001" summary="Added jump functionality between nodes. Error handeling not yet inplemented">
       <created>1621089712174</created>
@@ -106,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621256830051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removed duplicate code and added additional documentation">
+      <created>1621262231899</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621262231899</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +171,8 @@
     <MESSAGE value="Added functionality for infinte amount of nodes" />
     <MESSAGE value="Added functionality for infinite amount of nodes" />
     <MESSAGE value="Added documentation in FSM class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation in FSM class" />
+    <MESSAGE value="removed duplicate code and added additional documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed duplicate code and added additional documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
