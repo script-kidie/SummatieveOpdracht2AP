@@ -36,7 +36,7 @@ public class FSM {
 
     public void runText(){
         /*
-         * Jumps between nodes based if a text input
+         * Jumps between nodes based of a text input
          * @return int
          */
         this.currentNode = nodeArray.get(0); //start at the first node
